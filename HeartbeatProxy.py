@@ -89,8 +89,6 @@ class Proxy(Output):
     def listen(self):
         self.proxy_socket.listen(1)
         client_ch_socket, _ = self.proxy_socket.accept()
-        # [28] is the data size accepted after filtering. It was set to 28 for testing.
-        # This will be changed later to become user input
         client_channel = ProxyChannel(self, client_ch_socket, self.client_hb, self.CLIENT_CH_TAG)
         server_ch_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server_ch_socket.connect((self.server_address, self.port))
