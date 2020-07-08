@@ -3,3 +3,7 @@ We used Bind9 DNS server and set it as the primary server of our LAN. We configu
 All zone files are similar, thus we only present the zone file that corresponds to Swann as an example.
 
 This was developed as part of an MSc. project in the University of Kent in the UK.
+
+Research Paper: Selective Forwarding Attack on IoT Home Security Kits
+
+DOI: [10.1007/978-3-030-42048-2_23](https://link.springer.com/chapter/10.1007/978-3-030-42048-2_23)
